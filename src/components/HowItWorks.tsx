@@ -53,8 +53,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 lg:py-36 bg-beige-light/40 relative">
-      <div className="absolute inset-0 bg-beige-glow pointer-events-none" />
+    <section id="how-it-works" className="py-24 lg:py-36 bg-[#f4f6fb] border-y border-[#dde4f0] relative">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,7 +80,7 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ delay: i * 0.08, duration: 0.5, ease }}
-              className="group p-6 lg:p-7 rounded-2xl bg-white border border-border hover:border-accent/20 transition-all duration-300 hover:shadow-[0_4px_24px_rgba(193,127,36,0.06)] h-full"
+              className="group p-6 lg:p-7 rounded-2xl bg-white border border-border shadow-[0_2px_12px_rgba(27,42,74,0.06)] hover:border-accent/25 hover:shadow-[0_6px_28px_rgba(27,42,74,0.10)] transition-all duration-300 h-full"
             >
               {/* Icon */}
               <div className="mb-5">

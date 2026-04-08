@@ -29,9 +29,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function ProblemStatement() {
   return (
-    <section id="challenges" className="py-14 lg:py-20 bg-background relative">
-      {/* Subtle beige accent */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/10 to-transparent" />
+    <section id="challenges" className="py-14 lg:py-20 bg-[#edf1f9] border-y border-[#dde4f0] relative">
 
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <motion.div
@@ -60,7 +58,7 @@ export default function ProblemStatement() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ delay: i * 0.08, duration: 0.5, ease }}
-              className="group relative p-7 lg:p-8 rounded-2xl bg-white border border-border hover:border-accent/20 transition-all duration-300 hover:shadow-[0_4px_24px_rgba(193,127,36,0.06)]"
+              className="group relative p-7 lg:p-8 rounded-2xl bg-white border border-border shadow-[0_2px_12px_rgba(27,42,74,0.06)] hover:border-accent/25 hover:shadow-[0_6px_28px_rgba(27,42,74,0.10)] transition-all duration-300"
             >
               <div className="flex items-start gap-5">
                 <span className="text-[48px] lg:text-[56px] font-bold text-beige leading-none tracking-[-0.04em] select-none">

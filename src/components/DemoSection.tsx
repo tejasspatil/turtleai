@@ -6,54 +6,30 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function DemoSection() {
   return (
-    <section className="relative py-16 lg:py-24 overflow-hidden bg-background">
-      <div className="mx-auto max-w-[1240px] px-6 lg:px-8 relative z-10">
+    <section className="py-10 lg:py-14 bg-background overflow-hidden">
+      <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease }}
-          className="grid lg:grid-cols-[7fr_3fr] gap-4 lg:gap-5 items-stretch"
-          style={{ minHeight: "520px" }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5"
         >
-          {/* LEFT CARD: Background image + Video */}
-          <div 
-            className="relative rounded-[20px] lg:rounded-[28px] overflow-hidden shadow-[0_32px_80px_-16px_rgba(27,42,74,0.18)] flex items-center justify-center p-4 sm:p-6 lg:p-8" 
-            style={{ 
-              backgroundImage: "url('/image-3.png')",
-              backgroundColor: "#1a1a1a",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat"
-            }}
-          >
-            {/* Dark overlay to ensure video pops and background isn't too distracting */}
-            <div className="absolute inset-0 bg-black/30" />
-            
-            {/* Video Container */}
-            <div className="relative z-10 w-full max-w-[640px] rounded-[16px] lg:rounded-[20px] overflow-hidden shadow-[0_24px_60px_rgba(0,0,0,0.5)] bg-black/90">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" /* 16:9 Aspect Ratio */ }}>
-                <iframe
-                  title="turtleai Demo"
-                  src="https://www.youtube.com/embed/MbArKav8WEo?rel=0&showinfo=0&modestbranding=1"
-                  className="absolute top-0 left-0 w-full h-full rounded-[16px] lg:rounded-[20px] border border-white/10"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-            {/* Add min-height via utility classes so it changes on breakpoints */}
-            <div className="absolute inset-0 pointer-events-none min-h-[360px] md:min-h-[440px] lg:min-h-[480px]"></div>
+          {/* LEFT — demo-2.png */}
+          <div className="group rounded-[20px] lg:rounded-[28px] overflow-hidden p-4 lg:p-6 flex items-center justify-center transition-all duration-500 border border-[#dde4f0] hover:border-[#b8c5e0] bg-[#edf1f9] hover:bg-[#e8edf7] shadow-[0_2px_16px_rgba(27,42,74,0.06)] hover:shadow-[0_8px_40px_rgba(27,42,74,0.12)]">
+            <img
+              src="/demo-2.png"
+              alt="turtleai platform demo"
+              className="w-full h-auto object-contain rounded-xl shadow-[0_4px_20px_rgba(27,42,74,0.10)] group-hover:shadow-[0_8px_32px_rgba(27,42,74,0.16)] transition-shadow duration-500"
+            />
           </div>
 
-          {/* RIGHT CARD: Image 2 */}
-          <div 
-            className="relative rounded-[20px] lg:rounded-[28px] overflow-hidden shadow-[0_32px_80px_-16px_rgba(27,42,74,0.12)] bg-navy min-h-[360px] md:min-h-[440px] lg:min-h-[480px]" 
-          >
+          {/* RIGHT — demo-12.png */}
+          <div className="group rounded-[20px] lg:rounded-[28px] overflow-hidden p-4 lg:p-6 flex items-center justify-center transition-all duration-500 border border-[#dde4f0] hover:border-[#b8c5e0] bg-[#edf1f9] hover:bg-[#e8edf7] shadow-[0_2px_16px_rgba(27,42,74,0.06)] hover:shadow-[0_8px_40px_rgba(27,42,74,0.12)]">
             <img
-              src="/image-2.png"
-              alt="Professional using turtleai"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              src="/demo-12.png"
+              alt="turtleai in action"
+              className="w-full h-auto object-contain rounded-xl shadow-[0_4px_20px_rgba(27,42,74,0.10)] group-hover:shadow-[0_8px_32px_rgba(27,42,74,0.16)] transition-shadow duration-500"
             />
           </div>
         </motion.div>

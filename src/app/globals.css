@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Turtle AI Brand Palette — Navy + Gold/Beige */
-  --background: #FDFBF7;           /* Warm off-white */
+  /* Turtle AI Brand Palette — Navy + Gold on Cool Blue-White */
+  --background: #f4f6fb;           /* Cool blue-tinted off-white */
   --foreground: #1B2A4A;           /* Turtle AI Navy */
 
   --surface: #FFFFFF;
-  --surface-secondary: #F7F3ED;    /* Warm beige surface */
+  --surface-secondary: #EDF1F9;    /* Cool blue-gray surface */
   --surface-dark: #121C31;         /* Deep navy for dark cards */
-  --surface-glass: rgba(253, 251, 247, 0.75);
+  --surface-glass: rgba(244, 246, 251, 0.85);
   --surface-dark-glass: rgba(27, 42, 74, 0.88);
 
-  --border: #E8E0D4;              /* Warm border */
-  --border-light: #F2EDE5;        /* Lighter warm border */
+  --border: #DDE2EE;              /* Cool blue-gray border */
+  --border-light: #E8EDF7;        /* Lighter cool border */
   --border-dark: rgba(255, 255, 255, 0.1);
 
   --accent: #C17F24;              /* Turtle AI Gold */
   --accent-light: #d4a04a;
-  --accent-lighter: #E8C882;      /* Soft beige-gold */
+  --accent-lighter: #E8C882;
   --accent-dark: #a06a1a;
 
-  --beige: #F5E6C8;              /* Warm beige for backgrounds */
-  --beige-light: #FBF5EA;        /* Very light beige */
-  --beige-dark: #D4B896;         /* Darker beige for borders */
+  --beige: #E8EDF7;              /* Cool blue-gray — icon & card highlights */
+  --beige-light: #F0F4FA;        /* Very light cool — section backgrounds */
+  --beige-dark: #BEC7DC;         /* Cool border for highlighted elements */
 
   --navy: #1B2A4A;               /* Logo navy */
   --navy-light: #2A3F6A;         /* Lighter navy */
@@ -82,7 +82,7 @@ html {
 }
 
 .bg-hero-glow {
-  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(193, 127, 36, 0.06) 0%, rgba(245, 230, 200, 0.04) 40%, transparent 70%);
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(193, 127, 36, 0.07) 0%, rgba(180, 200, 240, 0.05) 40%, transparent 70%);
 }
 
 .bg-dark-glow {
@@ -90,14 +90,14 @@ html {
 }
 
 .bg-beige-glow {
-  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(245, 230, 200, 0.5) 0%, rgba(253, 251, 247, 0.2) 60%, transparent 80%);
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(193, 127, 36, 0.06) 0%, rgba(180, 200, 240, 0.08) 50%, transparent 80%);
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(244, 246, 251, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(193, 127, 36, 0.08);
+  border: 1px solid rgba(193, 127, 36, 0.10);
 }
 
 .glass-panel-dark {
@@ -108,10 +108,10 @@ html {
 }
 
 .glass-panel-beige {
-  background: rgba(245, 230, 200, 0.25);
+  background: rgba(232, 237, 247, 0.35);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(193, 127, 36, 0.1);
+  border: 1px solid rgba(193, 127, 36, 0.10);
 }
 
 /* Hover lift for cards */
@@ -121,7 +121,7 @@ html {
 
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 32px -8px rgba(27, 42, 74, 0.10);
 }
 
 .hover-lift-dark:hover {
@@ -137,11 +137,11 @@ html {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E5E7EB;
+  background: #C8D0E4;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #D1D5DB;
+  background: #A8B4CC;
 }
 
 /* Smooth focus outlines */

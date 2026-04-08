@@ -9,7 +9,7 @@ function FeatureIcon({ children }: { children: React.ReactNode }) {
   return (
     <div className="w-12 h-12 rounded-xl mb-6 flex items-center justify-center relative">
       <div className="absolute inset-0 bg-accent/8 rounded-xl skew-y-2 transform -rotate-3" />
-      <div className="absolute inset-0 bg-beige border border-beige-dark/50 rounded-xl shadow-sm flex items-center justify-center">
+      <div className="absolute inset-0 bg-[#f0f4fa] border border-[#c8d4eb] rounded-xl shadow-sm flex items-center justify-center">
         <div className="text-accent">{children}</div>
       </div>
     </div>
@@ -18,7 +18,7 @@ function FeatureIcon({ children }: { children: React.ReactNode }) {
 
 export default function PlatformFeatures() {
   return (
-    <section id="platform" className="py-24 lg:py-32 bg-background border-y border-border overflow-hidden">
+    <section id="platform" className="py-24 lg:py-32 bg-[#e8edf7] border-y border-[#d5dcee] overflow-hidden">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
 
         {/* Header */}
@@ -29,9 +29,28 @@ export default function PlatformFeatures() {
           transition={{ duration: 0.6, ease }}
           className="max-w-[800px] mx-auto text-center mb-16 lg:mb-24"
         >
-          <p className="text-[13px] font-semibold text-accent normal-case tracking-[0.12em] mb-4">
+          <p className="text-[13px] font-semibold text-accent normal-case tracking-[0.12em] mb-5">
             unified platform
           </p>
+
+          {/* Backed by gAI Ventures badge */}
+          <div className="flex justify-center mb-6">
+            <a
+              href="https://gai.ventures"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#f0f4fa] border border-[#c8d4eb] hover:border-accent/30 hover:bg-white transition-all duration-300 shadow-[0_2px_8px_rgba(27,42,74,0.07)]"
+            >
+              <img src="/gai-logo.png" alt="gAI Ventures" className="h-5 w-auto flex-shrink-0" />
+              <span className="text-[13px] font-medium text-foreground/70 tracking-tight">
+                backed by <strong className="text-foreground">gAI Ventures</strong>
+              </span>
+              <svg className="w-3.5 h-3.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+
           <h2 className="text-[40px] sm:text-[48px] lg:text-[64px] font-bold text-navy tracking-[-0.04em] leading-[1.05]">
             everything to run
             <br />
@@ -114,12 +133,12 @@ export default function PlatformFeatures() {
               />
               {/* Layer 1 — top card */}
               <div
-                className="absolute rounded-[32px] bg-beige-light border border-beige-dark/60 shadow-[0_20px_60px_rgba(193,127,36,0.12),0_4px_16px_rgba(27,42,74,0.08)] flex items-center justify-center"
+                className="absolute rounded-[32px] bg-[#f0f4fa] border border-[#c8d4eb] shadow-[0_20px_60px_rgba(27,42,74,0.12),0_4px_16px_rgba(27,42,74,0.08)] flex items-center justify-center"
                 style={{ width: 220, height: 300 }}
               >
                 {/* Subtle gold glow behind logo */}
                 <div className="absolute inset-0 rounded-[32px] overflow-hidden">
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-accent/10 rounded-full blur-[40px]" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-accent/15 rounded-full blur-[48px]" />
                 </div>
                 <TurtleMark className="w-24 h-auto relative z-10" color="#C17F24" />
               </div>

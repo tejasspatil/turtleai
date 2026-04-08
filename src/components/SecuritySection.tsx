@@ -74,10 +74,7 @@ const pillars = [
 
 export default function SecuritySection() {
   return (
-    <section id="security" className="py-24 lg:py-36 bg-background relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/15 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/10 to-transparent" />
-      <div className="absolute inset-0 bg-beige-glow pointer-events-none opacity-50" />
+    <section id="security" className="py-24 lg:py-36 bg-[#edf1f9] border-y border-[#dde4f0] relative overflow-hidden">
 
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8 relative z-10">
 
@@ -108,7 +105,7 @@ export default function SecuritySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ delay: i * 0.1, duration: 0.55, ease }}
-              className="group relative bg-white border border-border rounded-2xl p-7 lg:p-8 hover:border-accent/25 hover:shadow-[0_8px_32px_rgba(193,127,36,0.08)] transition-all duration-300"
+              className="group relative bg-white border border-border rounded-2xl p-7 lg:p-8 hover:border-accent/30 shadow-[0_2px_12px_rgba(27,42,74,0.06)] hover:shadow-[0_8px_32px_rgba(27,42,74,0.10)] transition-all duration-300"
             >
               {/* Top accent line on hover */}
               <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-accent/0 to-transparent group-hover:via-accent/40 transition-all duration-500 rounded-full" />
@@ -143,7 +140,7 @@ export default function SecuritySection() {
               <ul className="space-y-3">
                 {pillar.highlights.map((h, j) => (
                   <li key={j} className="flex items-start gap-3">
-                    <div className="mt-0.5 w-4 h-4 rounded-full bg-beige flex items-center justify-center flex-shrink-0 border border-beige-dark/30 group-hover:bg-accent/10 group-hover:border-accent/20 transition-colors duration-300">
+                    <div className="mt-0.5 w-4 h-4 rounded-full bg-[#edf1f9] flex items-center justify-center flex-shrink-0 border border-[#c8d4eb] group-hover:bg-accent/10 group-hover:border-accent/20 transition-colors duration-300">
                       <svg className="w-2.5 h-2.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>

@@ -7,7 +7,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function CTA() {
   return (
-    <section id="contact" className="py-14 lg:py-20 bg-beige-light/30">
+    <section id="contact" className="py-14 lg:py-20 bg-[#edf1f9] border-t border-[#dde4f0]">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

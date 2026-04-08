@@ -12,35 +12,11 @@ export default function Hero() {
       {/* Warm beige glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-hero-glow rounded-full opacity-80" />
-        <div className="absolute top-[20%] right-[-5%] w-[400px] h-[400px] rounded-full bg-beige/20 blur-[120px]" />
+        <div className="absolute top-[20%] right-[-5%] w-[400px] h-[400px] rounded-full bg-[#dde4f0]/40 blur-[120px]" />
         <div className="absolute top-[10%] left-[-5%] w-[300px] h-[300px] rounded-full bg-accent/5 blur-[100px]" />
       </div>
 
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8 relative z-10 text-center">
-        {/* Release badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease }}
-          className="flex justify-center mb-10"
-        >
-          <a
-            href="https://gai.ventures"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full glass-panel hover:bg-beige-light/50 transition-colors duration-300"
-          >
-            {/* gAI Ventures logo */}
-            <img src="/gai-logo.png" alt="gAI Ventures" className="h-5 w-auto flex-shrink-0" />
-            <span className="text-[14px] font-medium text-foreground/80 tracking-tight">
-              backed by <strong className="text-foreground">gAI Ventures</strong>
-            </span>
-            <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
-        </motion.div>
-
         {/* Headline */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
