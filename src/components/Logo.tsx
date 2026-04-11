@@ -16,11 +16,11 @@ export function TurtleMark({ className = "w-8 h-10", color = "#1B2A4A" }: { clas
   );
 }
 
-export function TurtleWordmark({ className = "" }: { className?: string }) {
+export function TurtleWordmark({ className = "", isDarkTheme = false }: { className?: string; isDarkTheme?: boolean }) {
   return (
     <span className={`text-[22px] font-semibold tracking-[-0.02em] ${className}`}>
-      <span className="text-navy">turtle</span>
-      <span className="text-gold">ai</span>
+      <span className={isDarkTheme ? "text-white" : "text-navy"}>turtle</span>
+      <span className={isDarkTheme ? "text-accent-light" : "text-gold"}>ai</span>
     </span>
   );
 }

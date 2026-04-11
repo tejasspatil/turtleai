@@ -31,16 +31,16 @@ export default function Header() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/92 backdrop-blur-2xl shadow-[0_1px_0_rgba(193,127,36,0.06)] border-b border-accent/[0.06]"
-          : "bg-transparent"
+          ? "bg-background/92 backdrop-blur-2xl shadow-[0_8px_32px_-12px_rgba(27,42,74,0.12)] border-b border-accent/[0.08]"
+          : "bg-background/70 backdrop-blur-xl border-b border-white/40"
       }`}
     >
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <nav className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <TurtleMark className="w-7 h-9 transition-transform duration-300 group-hover:scale-[1.03]" />
-            <TurtleWordmark />
+            <TurtleMark className="w-7 h-9 transition-transform duration-300 group-hover:scale-[1.03]" color="#1B2A4A" />
+            <TurtleWordmark isDarkTheme={false} />
           </Link>
 
           {/* Desktop Nav */}
@@ -62,7 +62,7 @@ export default function Header() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2.5 text-[14px] font-medium text-white bg-navy rounded-full hover:bg-navy-dark transition-all duration-300 shadow-[0_2px_8px_rgba(27,42,74,0.15)] hover:shadow-[0_4px_16px_rgba(27,42,74,0.25)] hover:-translate-y-[1px]"
+              className="px-4 py-1.5 text-[12px] font-medium transition-all duration-300 rounded-full shadow-[0_2px_8px_rgba(27,42,74,0.15)] hover:-translate-y-[1px] text-white bg-navy hover:bg-navy-dark hover:shadow-[0_4px_16px_rgba(27,42,74,0.25)]"
             >
               book a demo
             </a>
@@ -71,22 +71,22 @@ export default function Header() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2.5 -mr-2.5 rounded-xl hover:bg-beige/30 transition-colors"
+            className="lg:hidden p-2.5 -mr-2.5 rounded-xl hover:bg-navy/5 transition-colors"
             aria-label="Toggle menu"
           >
             <div className="w-5 h-[14px] flex flex-col justify-between">
               <span
-                className={`block h-[1.5px] w-5 bg-navy rounded-full transition-all duration-300 ${
+                className={`block h-[1.5px] w-5 rounded-full bg-navy transition-all duration-300 ${
                   mobileOpen ? "rotate-45 translate-y-[6px]" : ""
                 }`}
               />
               <span
-                className={`block h-[1.5px] w-5 bg-navy rounded-full transition-all duration-300 ${
+                className={`block h-[1.5px] w-5 rounded-full bg-navy transition-all duration-300 ${
                   mobileOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`block h-[1.5px] w-5 bg-navy rounded-full transition-all duration-300 ${
+                className={`block h-[1.5px] w-5 rounded-full bg-navy transition-all duration-300 ${
                   mobileOpen ? "-rotate-45 -translate-y-[6px]" : ""
                 }`}
               />

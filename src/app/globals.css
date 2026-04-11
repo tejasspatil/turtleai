@@ -60,8 +60,8 @@
   --color-gold: var(--accent);
 
   /* Font Families */
-  --font-sans: 'Inter', var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  --font-mono: 'Geist Mono', var(--font-geist-mono), monospace;
+  --font-sans: Georgia, 'Times New Roman', Times, serif;
+  --font-mono: 'Geist Mono', monospace;
 }
 
 body {
